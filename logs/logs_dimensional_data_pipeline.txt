@@ -1,0 +1,6 @@
+[2025-05-11 18:11:50] [Execution ID: c9aece81-c91a-4d79-9a2f-3883268b63e1] [INFO] Starting ETL pipeline with Execution ID: c9aece81-c91a-4d79-9a2f-3883268b63e1
+[2025-05-11 18:11:50] [Execution ID: c9aece81-c91a-4d79-9a2f-3883268b63e1] [INFO] Tables created successfully.
+[2025-05-11 18:11:50] [Execution ID: c9aece81-c91a-4d79-9a2f-3883268b63e1] [INFO] Data ingestion completed successfully.
+[2025-05-11 18:11:55] [Execution ID: b0add106-b70a-4291-b1d9-dc06d80000a4] [INFO] Starting ETL pipeline with Execution ID: b0add106-b70a-4291-b1d9-dc06d80000a4
+[2025-05-11 18:11:55] [Execution ID: b0add106-b70a-4291-b1d9-dc06d80000a4] [INFO] Tables created successfully.
+[2025-05-11 18:11:55] [Execution ID: b0add106-b70a-4291-b1d9-dc06d80000a4] [INFO] Data ingestion completed successfully.
