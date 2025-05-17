@@ -1,0 +1,2 @@
+[2025-05-18 01:16:17] [Execution ID: 10d062ae-a16e-4c95-af10-0c24c4e1314f] [INFO] Logger initialized for execution ID 10d062ae-a16e-4c95-af10-0c24c4e1314f. Logging to: /Users/user/Desktop/DS206_Spring2025_Group5/logs/logs_dimensional_data_pipeline_10d062ae-a16e-4c95-af10-0c24c4e1314f.txt
+[2025-05-18 01:16:17] [Execution ID: 10d062ae-a16e-4c95-af10-0c24c4e1314f] [INFO] This is a test log entry.
