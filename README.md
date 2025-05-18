@@ -1,35 +1,46 @@
-DS206_Spring2025_Group5
+# DS206\_Spring2025\_Group5
 
-Description
+## Description
 
 This project implements a Dimensional Data Flow ETL pipeline using Python and SQL Server. It extracts data from source tables, transforms it into dimensional structures (facts and dimensions), and loads it into a target database within a specified date range.
 
-Prerequisites
+## Prerequisites
 
-Windows OS (PowerShell)
-Python 3.8 or higher
-SQL Server instance accessible with proper credentials
-PowerShell execution policy allowing script execution
-Installation
+* Windows OS (PowerShell)
+* Python 3.8 or higher
+* SQL Server instance accessible with proper credentials
+* PowerShell execution policy allowing script execution
 
-Clone the repository:
+## Installation
 
-git clone <repository_url>
-cd DS206_Spring2025_Group5
-Create and activate a virtual environment:
+1. Clone the repository:
 
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-(If required) Adjust PowerShell execution policy:
+   ```powershell
+   git clone <repository_url>
+   cd DS206_Spring2025_Group5
+   ```
+2. Create and activate a virtual environment:
 
-Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
-Install dependencies:
+   ```powershell
+   python -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   ```
+3. (If required) Adjust PowerShell execution policy:
 
-pip install -r requirements.txt
-Configuration
+   ```powershell
+   Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+   ```
+4. Install dependencies:
 
-Create a file named sql_server_config.cfg in the project root with the following template:
+   ```powershell
+   pip install -r requirements.txt
+   ```
 
+## Configuration
+
+Create a file named `sql_server_config.cfg` in the project root with the following template:
+
+```ini
 [SQL_SERVER]
 Driver = ODBC Driver 17 for SQL Server
 Server = <YOUR_SERVER_NAME>
@@ -39,18 +50,25 @@ Trusted_Connection = yes
 ; Encrypt = yes
 ; UID = <username>
 ; PWD = <password>
+```
+
 Replace placeholders with your actual SQL Server settings.
 
-Usage
+## Usage
 
 Run the ETL pipeline from PowerShell:
 
+```powershell
 python main.py --start-date 1996-01-01 --end-date 1998-01-01 --config-path sql_server_config.cfg
---start-date: Start date for data ingestion (YYYY-MM-DD)
---end-date: End date for data ingestion (YYYY-MM-DD)
---config-path: Path to the config file (default: sql_server_config.cfg)
-Project Structure
+```
 
+* `--start-date`: Start date for data ingestion (YYYY-MM-DD)
+* `--end-date`: End date for data ingestion (YYYY-MM-DD)
+* `--config-path`: Path to the config file (default: `sql_server_config.cfg`)
+
+## Project Structure
+
+```
 DS206_SPRING2025_GROUP5/
 ├── __pycache__/                   # Python bytecode cache (ignored in VCS)
 ├── .idea/                         # IDE configuration files (JetBrains project settings)
@@ -86,3 +104,5 @@ DS206_SPRING2025_GROUP5/
 ├── test.py                        # Quick validation script
 ├── utils.py                       # Helper functions (overlap with ETL utils)
 └── README.md                      # Project documentation
+```
+
