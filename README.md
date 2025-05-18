@@ -16,7 +16,7 @@ This project implements a Dimensional Data Flow ETL pipeline using Python and SQ
 1. Clone the repository:
 
    ```powershell
-   git clone <repository_url>
+   git clone <https://github.com/EdelweissG/DS206_Spring2025_Group5.git>
    cd DS206_Spring2025_Group5
    ```
 2. Create and activate a virtual environment:
